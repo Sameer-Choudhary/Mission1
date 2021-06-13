@@ -1,36 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <!--NavBar-->
+  </head>
+  <body>
+    <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="navbar_brand">
-                <img src="./Asset/logo.png" alt="logo" class="navbar_logo" />
-            </div>
-            <div class="navbar_nav_items">
-                <button class="nav_item button_primary">Order Food</button>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="navbar_brand">
+          <img src="./assets/logo.png" alt="logo" class="navbar_logo" />
+        </div>
+        <div class="navbar_nav_items">
+          <button class="nav_item button_primary">Order Food</button>
+        </div>
+      </nav>
     </header>
     <main class="container">
-    <!--Hero Section-->
-    <section class="hero_container">
+      <!-- Hero Section -->
+      <section class="hero_container">
         <div class="hero_image_container">
-            <img class="hero_image" src="Asset/hero.jpg" alt="hero image" />
+            <img class="hero_image_1" src="./assets/svg/herobgpattren.svg" alt="hero_image_1" />
+            <img class="hero_image_2" src="./assets/svg/heroShape.svg" alt="hero_image_2" />
+           <img class="hero_image" src="./assets/hero.jpg" alt="hero image" />
         </div>
         <div class="hero_description">
-            <h1 class="hero_">Order Food From Your Favourite Restaurant</h1>
+          <h1 class="hero_text">
+            Order food from favourite restaurants near you.
+          </h1>
+          <button class="button_primary">Order now</button>
         </div>
-    </section>
+      </section>
+
+      <!-- Explore Menu -->
+      <section class="explore_menu_container">
+        <h1 class="explore_menu_text">Explore Our Menu</h1>
+        <div class="explore_menu_gradient_bg"></div>
+        <div class="explore_menu_lists">
+          <!-- Burger -->
+          <div class="food_menu_card">
+            <img src="./assets/burger.jpg" alt="burger" class="food_image" />
+            <div class="food_menu_card_description">
+              <h3 class="food_title">Burgers</h3>
+              <p class="food_restaurants">
+                Burger King, Mcdonalds, Burger Place
+                <span style="color: red"> +3</span>
+              </p>
+            </div>
+          </div>
+          <!-- Pizza -->
+          <div class="food_menu_card" id="pizza_card">
+            <img src="./assets/pizza.jpg" alt="pizza" class="food_image" />
+            <div class="food_menu_card_description">
+              <h3 class="food_title">Pizza</h3>
+              <p class="food_restaurants">
+                Pizza Hut, Domino's Pizza
+                <span style="color: red"> +3</span>
+              </p>
+            </div>
+          </div>
+          <!-- Ice Cream -->
+          <div class="food_menu_card">
+            <img
+              src="./assets/iceCream.jpg"
+              alt="ice cream"
+              class="food_image"
+            />
+            <div class="food_menu_card_description">
+              <h3 class="food_title">Ice Creams</h3>
+              <p class="food_restaurants">
+                Baskin Robins, Ibaco
+                <span style="color: red"> +3</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="explore_menu_view_more">
+          <button class="button_primary">View More</button>
+        </div>
+      </section>
+
+      <!-- Restaurants -->
+      <section class="restaurants_container">
+        <h1 class="restaurants_description">Order From 100s of restaurants</h1>
+        <div class="restaurants_flex">
+          <div class="restaurants_flex_row_one">
+            <div class="restaurant_1">
+              <img
+                class="restaurant_1_image"
+                src="./assets/restaurant1.jpg"
+                alt="restaurant_1"
+              />
+            </div>
+            <div class="restaurant_2">
+              <img
+                class="restaurant_2_image"
+                src="./assets/restaurant2.jpg"
+                alt="restaurant_2"
+              />
+            </div>
+          </div>
+          <div class="restaurants_flex_row_two">
+            <div class="restaurant_3">
+              <img
+                class="restaurant_3_image"
+                src="./assets/restaurant3.jpg"
+                alt="restaurant_3"
+              />
+            </div>
+            <div class="restaurant_4">
+              <img
+                class="restaurant_4_image"
+                src="./assets/restaurant4.jpg"
+                alt="restaurant_4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    </br>
+  </br>
+    <form>
+      <div class="upper_footer">
+        <div class="upper_footer_text">
+          <h1 class="upper_footer_text_1">Stay Updated</h1>
+        </div>
+        <div class="upper_footer_email">
+          <input style="height: 30px; border-color: skyblue;" type="email" id="email" placeholder=" email@email.com" size="40%" maxlength="50" />
+          <button class="nav_item button_primary" style="margin-left: 10px;">Get Updates</button>
+        </div>
+      </div>
+    </form>
+    <br>
+    <section class="upper_footer_2">
+      <img class="upper_footer_2_image" src="./assets/restaurant2.jpg" alt="Blur" />
+      <h3 class="upper_footer_2_text">When a Man's Stomach is Full it makes no Difference whether he is Rich or Poor</h3>
+    </section>
+    </br>
+    <footer>
+        <div class="footer">
+            <div class="footer_items">
+                <h1 class="footer_items_zomato">Zomato</h1>
+                <div class="footer_items_list">
+                    <h5>Pricing</h5>
+                    <h5>Terms and Condition</h5>
+                    <h5>Partnership</h5>
+                    <h5>Career</h5>
+                    <h5>Contact</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
 </html>
